@@ -12,7 +12,25 @@
 		119FF2D42077AB050036E9C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119FF2D22077AB050036E9C8 /* Main.storyboard */; };
 		119FF2D62077AB050036E9C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119FF2D52077AB050036E9C8 /* Assets.xcassets */; };
 		119FF2D92077AB050036E9C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119FF2D72077AB050036E9C8 /* LaunchScreen.storyboard */; };
+		119FF2ED2077AE400036E9C8 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119FF2EA2077AE0C0036E9C8 /* SwiftyBeaver.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		119FF2E72077AE0C0036E9C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119FF2E02077AE0C0036E9C8 /* Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Library::Library::Product";
+			remoteInfo = Library;
+		};
+		119FF2E92077AE0C0036E9C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119FF2E02077AE0C0036E9C8 /* Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftyBeaver::SwiftyBeaver::Product";
+			remoteInfo = SwiftyBeaver;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		119FF2CB2077AB050036E9C8 /* test_SPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_SPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +40,7 @@
 		119FF2D52077AB050036E9C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		119FF2D82077AB050036E9C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		119FF2DA2077AB050036E9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119FF2E02077AE0C0036E9C8 /* Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Library.xcodeproj; path = Library/Library.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119FF2ED2077AE400036E9C8 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +58,10 @@
 		119FF2C22077AB040036E9C8 = {
 			isa = PBXGroup;
 			children = (
+				119FF2E02077AE0C0036E9C8 /* Library.xcodeproj */,
 				119FF2CD2077AB050036E9C8 /* test_SPM */,
 				119FF2CC2077AB050036E9C8 /* Products */,
+				119FF2EC2077AE400036E9C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +84,22 @@
 				119FF2DA2077AB050036E9C8 /* Info.plist */,
 			);
 			path = test_SPM;
+			sourceTree = "<group>";
+		};
+		119FF2E12077AE0C0036E9C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				119FF2E82077AE0C0036E9C8 /* Library */,
+				119FF2EA2077AE0C0036E9C8 /* SwiftyBeaver.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		119FF2EC2077AE400036E9C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,12 +149,35 @@
 			mainGroup = 119FF2C22077AB040036E9C8;
 			productRefGroup = 119FF2CC2077AB050036E9C8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 119FF2E12077AE0C0036E9C8 /* Products */;
+					ProjectRef = 119FF2E02077AE0C0036E9C8 /* Library.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				119FF2CA2077AB050036E9C8 /* test_SPM */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		119FF2E82077AE0C0036E9C8 /* Library */ = {
+			isa = PBXReferenceProxy;
+			fileType = text;
+			path = Library;
+			remoteRef = 119FF2E72077AE0C0036E9C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		119FF2EA2077AE0C0036E9C8 /* SwiftyBeaver.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyBeaver.framework;
+			remoteRef = 119FF2E92077AE0C0036E9C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		119FF2C92077AB050036E9C8 /* Resources */ = {
